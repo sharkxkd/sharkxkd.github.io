@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Spring Framework的基础学习</title>
+      <link href="/2024/10/12/SpringFrameWork%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2024/10/12/SpringFrameWork%E5%AD%A6%E4%B9%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Spring-Framework的基础学习"><a href="#Spring-Framework的基础学习" class="headerlink" title="Spring Framework的基础学习"></a>Spring Framework的基础学习</h2><p>说起Spring就不得不提到它的三大重要思想，IOC、DI、AOP这三个重要的思想，分别为控制反转，依赖注入，面向切面编程。那么具体是什么意思呢？</p><h3 id="IOC控制反转"><a href="#IOC控制反转" class="headerlink" title="IOC控制反转"></a>IOC控制反转</h3><p>IOC控制反转，顾名思义控制和反转，控制即控制权，反转指的就是反转控制权。在Java中我们通常使用new 类名来创建对象，这是直接创建，控制权在我们手中，而我们现在要反转控制权，即在我们和被创建对象之间加个中间人，把事情交给他做，我们只负责使用，这就是反转控制权，即一个工厂对对象进行生产，但不止于生产，还包括Bean对象的全部生命周期都是由其全权负责。</p><h3 id="DI依赖注入"><a href="#DI依赖注入" class="headerlink" title="DI依赖注入"></a>DI依赖注入</h3><p>DI依赖注入，顾名思义就是将依赖进行注入，那么什么是依赖呢，一个对象会拥有许多属性，这些属性就是我们要注入的依赖，传统中我们可以直接赋值或者在构造方法时赋值，但是倘若很多相似的属性都需要如此赋值时，这将是一个繁琐的过程，我们可以引入一个负责管理的工厂如IOC一样，交给别人来做，自己负责使用，靠管理人为对象的属性进行值的注入。</p><h3 id="AOP面向切面思想"><a href="#AOP面向切面思想" class="headerlink" title="AOP面向切面思想"></a>AOP面向切面思想</h3><p>这是一个不同于面向对象和面向过程的高级思想，通过动态代理，在方法的执行过程中一刀切开，对方法执行前或执行后进行一些操作，即方法的增强操作，这就是面向切面。</p><h3 id="如何使用Spring呢？"><a href="#如何使用Spring呢？" class="headerlink" title="如何使用Spring呢？"></a>如何使用Spring呢？</h3><p>Spring框架做的大多事类似一个中间人的身份，负责对Bean实例的一个管理，这样我们可以只关注使用，而无需关注其全部生命周期。所以Spring是如何知道该管理哪些？，如何管理的呢？<br>配置文件是一个不错的选择，我们可以通过使用配置文件来和框架进行交互，按照一定的规范标准，在配置文件中书写相关信息，接下来我会简单列举一个从配置文件到使用的过程（写几行代码）。<br>在这里我们读取配置文件有许多方式，但究其根底BeanFactory才是最基础的Bean工厂，也就是负责对我们Bean实例进行管理的核心，但是我们一般不直接使用它，而是使用其子接口ApplicationContext，对于ApplicationContext我们无法直接创建其实例而是使用它的两个常用的实现类∶   和   ，这只是只引入spring-context相关的该接口的实现，越复杂的spring可能其实现类更多，实现的功能更加强大。为什么我们不用BeanFactory而使用ApplicationContext呢？就是因为ApplicationContext是对其的继承，除了一些对Bean的管理之外，还有许多增强的功能。。。。</p><h5 id="配置文件使用的介绍"><a href="#配置文件使用的介绍" class="headerlink" title="配置文件使用的介绍"></a>配置文件使用的介绍</h5>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一个程序员的自我修养</title>
       <link href="/2024/10/05/%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/"/>
       <url>/2024/10/05/%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB/</url>
